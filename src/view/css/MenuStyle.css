@@ -1,0 +1,36 @@
+
+
+.menu {
+    -fx-font-family: calibri;
+    -fx-font-size: 12px;
+    -fx-font-weight: bolder;
+}
+
+.menu:selected {
+    -fx-background-color:#C0C0C0; 
+    -fx-text-fill: #C0C0C0;
+}
+
+.menu:hover {
+    -fx-background-color: #C0C0C0;
+    -fx-text-fill:#C0C0C0;
+}
+
+.menu-item {
+    -fx-font-family: calibri;
+    -fx-font-size: 12px;
+    -fx-font-weight: bolder;
+    -fx-background-color: #C0C0C0;
+}
+
+.menu-item:selected {
+    -fx-background-color:#C0C0C0; 
+    -fx-text-fill: #C0C0C0;
+}
+
+.menu-item:hover {
+    -fx-background-color: #C0C0C0;
+    -fx-text-fill:#C0C0C0;
+}
+
+
