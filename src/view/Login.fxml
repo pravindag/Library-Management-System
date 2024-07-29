@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="154.0" layoutY="84.0" prefHeight="52.0" prefWidth="115.0" text="LOGIN">
+         <font>
+            <Font name="Calibri Bold" size="41.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="80.0" layoutY="173.0" prefHeight="26.0" prefWidth="263.0" promptText="Email Address" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtPassword" layoutX="80.0" layoutY="227.0" prefHeight="26.0" prefWidth="263.0" promptText="Password" style="-fx-background-radius: 10;" />
+      <JFXButton fx:id="btnLogin" layoutX="150.0" layoutY="286.0" onAction="#btnLoginOnAction" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: #C0C0C0; -fx-font-family: calibri; -fx-font-size: 15px; -fx-font-weight: bolder; -fx-background-radius: 15;" text="Login">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>  
+   </children>
+</AnchorPane>
