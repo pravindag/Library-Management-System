@@ -77,12 +77,12 @@
       <TableView fx:id="tblBookDetails" layoutX="50.799999999999955" layoutY="442.0" prefHeight="154.0" prefWidth="716.0" AnchorPane.rightAnchor="59.200000000000045">
         <columns>
           <TableColumn fx:id="colBookId" prefWidth="86.3999679684639" style="-fx-alignment: CENTER;" text="Book ID" />
-          <TableColumn fx:id="colBookName" prefWidth="231.1999969482422" text="Book Name" />
-            <TableColumn fx:id="colAuthor" prefWidth="153.60000610351562" text="Author" />
-            <TableColumn fx:id="colPublisher" minWidth="5.5999755859375" prefWidth="148.79998779296875" text="Publisher" />
-            <TableColumn fx:id="colNumberOfCopies" maxWidth="76.0" minWidth="2.39990234375" prefWidth="46.40008544921875" style="-fx-alignment: CENTER;" text="NoC" />
-            <TableColumn fx:id="colDelete" maxWidth="107.2000732421875" minWidth="5.5999755859375" prefWidth="33.5999755859375" style="-fx-alignment: CENTER;" />
-            <TableColumn fx:id="colUpdate" maxWidth="107.2000732421875" minWidth="5.5999755859375" prefWidth="33.5999755859375" style="-fx-alignment: CENTER;" />
+          <TableColumn fx:id="colBookName" prefWidth="204.0" text="Book Name" />
+            <TableColumn fx:id="colAuthor" prefWidth="139.20001220703125" text="Author" />
+            <TableColumn fx:id="colPublisher" minWidth="5.5999755859375" prefWidth="143.99993896484375" text="Publisher" />
+            <TableColumn fx:id="colNumberOfCopies" maxWidth="76.0" minWidth="2.39990234375" prefWidth="54.39996337890625" style="-fx-alignment: CENTER;" text="NoC" />
+            <TableColumn fx:id="colDelete" maxWidth="107.2000732421875" minWidth="5.5999755859375" prefWidth="41.60009765625" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="colUpdate" maxWidth="107.2000732421875" minWidth="5.5999755859375" prefWidth="40.7999267578125" style="-fx-alignment: CENTER;" />
         </columns>
       </TableView>
       <JFXButton fx:id="btnAdd" layoutX="659.6" layoutY="358.0" onAction="#btnAddOnAction" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #C0C0C0; -fx-font-family: calibri; -fx-font-size: 12px; -fx-font-weight: bolder; -fx-background-radius: 10;" text="Add" AnchorPane.rightAnchor="60.0">
