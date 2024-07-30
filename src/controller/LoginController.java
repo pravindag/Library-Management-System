@@ -1,9 +1,14 @@
 package controller;
 
+import java.io.File;
+
 import dto.LibrarianDto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import session.SessionManager;
 
@@ -21,6 +26,20 @@ public class LoginController extends CommonController{
 
     @FXML
     private TextField txtUserName;
+
+    @FXML
+    private ImageView imgLogin;
+
+    public void initialize(){ 
+
+        Image image = new Image("/icons/login-icon.png");
+        imgLogin.setStyle("-fx-background-color: #C0C0C0;");
+        imgLogin.setPreserveRatio(true);
+        imgLogin.setFitWidth(100);
+        imgLogin.setFitHeight(100);
+        imgLogin.setImage(image);
+
+    }
 
     @FXML
     void btnLoginOnAction(ActionEvent event) { 

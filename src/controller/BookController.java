@@ -20,6 +20,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import service.ServiceFactory;
 import service.custom.BookService;
@@ -191,7 +192,11 @@ public class BookController extends CommonController{
 
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-            stage.setTitle("Library Management System");
+
+            Image imgBook = new Image("/icons/book-icon.png");
+            stage.getIcons().add(imgBook);
+
+            stage.setTitle("  Library Management System");
             stage.setX(500);
             stage.setY(110);
             stage.show();

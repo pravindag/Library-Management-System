@@ -129,37 +129,37 @@ public class CommonController {
 
     @FXML
     void menuBookAddOnAction(ActionEvent event) {
-        loadScene("book","/view/Book.fxml", "Library Management System");
+        loadScene("book","/view/Book.fxml", "  Library Management System");
     }
 
     @FXML
     void menuCollectAddOnAction(ActionEvent event) {
-        loadScene("collect","/view/Collect.fxml", "Library Management System");
+        loadScene("collect","/view/Collect.fxml", "  Library Management System");
     }
 
     @FXML
     void menuCollectReportOnAction(ActionEvent event) {
-        loadScene("collect_report","/view/CollectReport.fxml", "Library Management System");
+        loadScene("collect_report","/view/CollectReport.fxml", "  Library Management System");
     }
 
     @FXML
     void menuLogOutOnAction(ActionEvent event) {
-        loadScene("main","/view/Login.fxml", "Library Management System");
+        loadScene("main","/view/Login.fxml", "  Library Management System");
     }
 
     @FXML
     void menuMemberAddOnAction(ActionEvent event) {
-        loadScene("member","/view/Member.fxml", "Library Management System");
+        loadScene("member","/view/Member.fxml", "  Library Management System");
     }
 
     @FXML
     void menuBorrowAddOnAction(ActionEvent event) {
-        loadScene("borrow","/view/Borrow.fxml", "Library Management System");
+        loadScene("borrow","/view/Borrow.fxml", "  Library Management System");
     }
 
     @FXML
     void menuBorrowReportOnAction(ActionEvent event) {
-        loadScene("borrow_report","/view/BorrowReport.fxml", "Library Management System");
+        loadScene("borrow_report","/view/BorrowReport.fxml", "  Library Management System");
     }
 
 }
