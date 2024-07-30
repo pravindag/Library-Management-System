@@ -11,6 +11,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -90,10 +91,6 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton fx:id="btnBack" layoutX="52.0" layoutY="29.0" onAction="#btnBackOnAction" style="-fx-background-color: #C0C0C0; -fx-font-family: calibri; -fx-font-size: 11px; -fx-font-weight: bolder;" text="Back">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></JFXButton>
       <Label fx:id="lblUserName" alignment="CENTER_RIGHT" layoutX="626.0" layoutY="23.0" prefHeight="26.0" prefWidth="142.0" style="-fx-font-family: calibri; -fx-font-size: 12px; -fx-font-weight: bolder;" />
       <Label layoutX="90.0" layoutY="212.0" prefHeight="26.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Title                                    :">
          <font>
@@ -136,5 +133,6 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
+      <ImageView fx:id="imgBack" fitHeight="40.0" fitWidth="75.0" layoutX="52.0" layoutY="40.0" onMouseClicked="#btnBackOnMouseClicked" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

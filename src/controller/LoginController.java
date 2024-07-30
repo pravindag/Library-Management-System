@@ -1,11 +1,8 @@
 package controller;
 
-import java.io.File;
-
 import dto.LibrarianDto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.geometry.Pos;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -58,7 +55,7 @@ public class LoginController extends CommonController{
                 SessionManager.getInstance().setUserId(librarianDto.getLibrarianId());
                 SessionManager.getInstance().setUserName(librarianDto.getFirstName());
 
-                loadScene("borrow","/view/Borrow.fxml", "Library Management System");
+                loadScene("borrow","/view/Borrow.fxml", " Library Management System");
 
             } catch (Exception e) {
                 showMessage("Error", "Please enter a valid data !");

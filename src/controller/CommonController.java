@@ -14,11 +14,16 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonBar.ButtonData;
 import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class CommonController {
 
     private Stage primaryStage;
+
+    @FXML
+    private ImageView imgBack;
 
     public CommonController(Stage primaryStage) {
         this.primaryStage = primaryStage;
@@ -58,6 +63,21 @@ public class CommonController {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    void btnBackOnMouseClicked(MouseEvent event) {
+        backToMainScene();
+    }
+
+    public void setBackButton(){
+
+        Image imageBack = new Image("/icons/back-icon.png");
+        imgBack.setStyle("-fx-background-color: #C0C0C0;  -fx-cursor: hand;");
+        imgBack.setPreserveRatio(true);
+        imgBack.setFitWidth(45);
+        imgBack.setFitHeight(30);
+        imgBack.setImage(imageBack);
     }
 
     protected void backToMainScene() {

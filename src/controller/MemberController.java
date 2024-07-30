@@ -37,9 +37,6 @@ public class MemberController extends CommonController{
     private JFXButton btnAdd;
 
     @FXML
-    private JFXButton btnBack;
-
-    @FXML
     private JFXButton btnUpdate;
 
     @FXML
@@ -88,6 +85,7 @@ public class MemberController extends CommonController{
     private TextField txtPhoneNumber;
 
     public void initialize(){ 
+        setBackButton();
         this.lblUserName.setText("Welcome " + SessionManager.getInstance().getUserName());
 
         setNewMemberId();
@@ -152,11 +150,6 @@ public class MemberController extends CommonController{
                 showMessage("Error", "Error occured !");
             }
         }
-    }
-
-    @FXML
-    void btnBackOnAction(ActionEvent event) {
-        backToMainScene();
     }
 
     private void setNewMemberId(){

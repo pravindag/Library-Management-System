@@ -50,9 +50,6 @@ public class BookController extends CommonController{
     private JFXButton btnUpdate;
 
     @FXML
-    private JFXButton btnBack;
-
-    @FXML
     private JFXButton btnUpdateGenre;
 
     @FXML
@@ -107,6 +104,7 @@ public class BookController extends CommonController{
     private TextField txtYearOfPublish;
 
     public void initialize(){ 
+        setBackButton();
         this.lblUserName.setText("Welcome " + SessionManager.getInstance().getUserName());
 
         setNewBookId();
@@ -174,11 +172,6 @@ public class BookController extends CommonController{
                 showMessage("Error", "Error occured !");
             }
         }
-    }
-
-    @FXML
-    void btnBackOnAction(ActionEvent event) {
-        backToMainScene();
     }
 
     @FXML
