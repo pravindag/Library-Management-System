@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="174.0" layoutY="49.0" prefHeight="40.0" prefWidth="170.0" text="Genre View">
+         <font>
+            <Font name="Calibri Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.4" layoutY="121.0" prefHeight="26.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Genre ID                            :" AnchorPane.leftAnchor="121.4" AnchorPane.rightAnchor="285.79999999999995">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtGenreId" disable="true" layoutX="263.0" layoutY="122.0" style="-fx-background-radius: 10;" />
+      <Separator layoutX="43.400000000000034" layoutY="290.0" prefHeight="0.0" prefWidth="450.0" AnchorPane.rightAnchor="42.19999999999999" />
+      <TableView fx:id="tblGenreDetails" layoutX="65.0" layoutY="313.0" prefHeight="154.0" prefWidth="403.0" AnchorPane.rightAnchor="67.80000000000001">
+        <columns>
+          <TableColumn fx:id="colGenreId" prefWidth="96.00000685453415" style="-fx-alignment: CENTER;" text="Genre ID" />
+          <TableColumn fx:id="colGenreName" prefWidth="221.59994506835938" text="Genre Name" />
+            <TableColumn fx:id="colDelete" maxWidth="107.2000732421875" minWidth="5.5999755859375" prefWidth="33.5999755859375" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="colUpdate" maxWidth="107.2000732421875" minWidth="5.5999755859375" prefWidth="33.5999755859375" style="-fx-alignment: CENTER;" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnAdd" layoutX="280.6" layoutY="226.0" onAction="#btnAddOnAction" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #C0C0C0; -fx-font-family: calibri; -fx-font-size: 12px; -fx-font-weight: bolder; -fx-background-radius: 10;" text="Add" AnchorPane.rightAnchor="149.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblUserName" alignment="CENTER_RIGHT" layoutX="626.0" layoutY="23.0" prefHeight="26.0" prefWidth="142.0" style="-fx-font-family: calibri; -fx-font-size: 12px; -fx-font-weight: bolder;" />
+      <Label layoutX="121.4" layoutY="171.0" prefHeight="26.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Genre Name                     :" AnchorPane.leftAnchor="121.4">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtGenreName" layoutX="263.0" layoutY="172.0" style="-fx-background-radius: 10;" />
+      <JFXButton fx:id="btnUpdate" layoutX="158.0" layoutY="226.0" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #C0C0C0; -fx-font-family: calibri; -fx-font-size: 12px; -fx-font-weight: bolder; -fx-background-radius: 10;" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
