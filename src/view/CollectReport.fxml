@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="209.0" layoutY="35.0" prefHeight="40.0" prefWidth="294.0" text="Collect Report View">
+         <font>
+            <Font name="Calibri Bold" size="34.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="388.0" layoutY="111.0" prefHeight="26.0" prefWidth="293.0" style="-fx-background-radius: 10;" AnchorPane.rightAnchor="58.39999999999998">
+        <menus>
+          <Menu mnemonicParsing="false" text="Borrow">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuBorrowAddOnAction" text="New Borrow" />
+              </items>
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuBorrowReportOnAction" text="Borrow Report" />
+              </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Collect">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuCollectAddOnAction" text="New Collect" />
+              </items>
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuCollectReportOnAction" text="Collect Report" />
+              </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Book">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuBookAddOnAction" text="New Book" />
+              </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Member">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuMemberAddOnAction" text="New Member" />
+              </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Profile">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuLogOutOnAction" text="Logout" />
+              </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="lblUserName" alignment="CENTER_RIGHT" layoutX="561.0" layoutY="21.0" prefHeight="26.0" prefWidth="142.0" style="-fx-font-family: calibri; -fx-font-size: 12px; -fx-font-weight: bolder;" />
+      <Pagination fx:id="tblCollectReportPagination" layoutX="58.0" layoutY="171.0" prefHeight="427.0" prefWidth="626.0" />
+      <ImageView fx:id="imgBack" fitHeight="40.0" fitWidth="75.0" layoutX="52.0" layoutY="40.0" onMouseClicked="#btnBackOnMouseClicked" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="302.0" layoutY="40.0" prefHeight="40.0" prefWidth="183.0" text="Collect View">
+         <font>
+            <Font name="Calibri Bold" size="34.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="388.0" layoutY="111.0" prefHeight="26.0" prefWidth="293.0" style="-fx-background-radius: 10;" AnchorPane.rightAnchor="58.39999999999998">
+        <menus>
+          <Menu mnemonicParsing="false" text="Borrow">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuBorrowAddOnAction" text="New Borrow" />
+              </items>
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuBorrowReportOnAction" text="Borrow Report" />
+              </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Collect">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuCollectAddOnAction" text="New Collect" />
+              </items>
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuCollectReportOnAction" text="Collect Report" />
+              </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Book">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuBookAddOnAction" text="New Book" />
+              </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Member">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuMemberAddOnAction" text="New Member" />
+              </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Profile">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuLogOutOnAction" text="Logout" />
+              </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="89.0" layoutY="157.0" prefHeight="26.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Collect ID                           :" AnchorPane.rightAnchor="607.4">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCollectId" disable="true" layoutX="229.0" layoutY="158.0" style="-fx-background-radius: 10;" />
+      <Separator layoutX="68.0" layoutY="205.0" prefHeight="0.0" prefWidth="754.0" AnchorPane.rightAnchor="3.6000000000000227" />
+      <Label layoutX="88.0" layoutY="272.0" prefHeight="26.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Member ID                        :">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMemberId" disable="true" layoutX="227.0" layoutY="273.0" style="-fx-background-radius: 10;" />
+      <Label fx:id="lblMemberData" layoutX="409.0" layoutY="273.0" prefHeight="26.0" prefWidth="262.0" style="-fx-background-radius: 10;">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="316.0" prefHeight="26.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Collected Date                  :">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCollectedDate" disable="true" layoutX="227.0" layoutY="317.0" style="-fx-background-radius: 10;" />
+      <Separator layoutX="34.80000000000007" layoutY="365.0" prefHeight="0.0" prefWidth="754.0" AnchorPane.rightAnchor="36.799999999999955" />
+      <TableView fx:id="tblBorrowDetails" layoutX="54.799999999999955" layoutY="387.0" prefHeight="154.0" prefWidth="716.0" AnchorPane.rightAnchor="55.200000000000045">
+        <columns>
+          <TableColumn fx:id="colBookId" prefWidth="96.00000154972076" style="-fx-alignment: CENTER;" text="Book ID" />
+          <TableColumn fx:id="colBookName" prefWidth="279.1999740600586" text="Book Name" />
+            <TableColumn fx:id="colAuthor" prefWidth="171.20010375976562" text="Author" />
+            <TableColumn fx:id="colPublisher" minWidth="5.5999755859375" prefWidth="168.0" text="Publisher" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnCollect" layoutX="662.8000000000001" layoutY="566.0" onAction="#btnCollectOnAction" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #C0C0C0; -fx-font-family: calibri; -fx-font-size: 12px; -fx-font-weight: bolder; -fx-background-radius: 10;" text="Collect" AnchorPane.rightAnchor="56.799999999999955">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblUserName" alignment="CENTER_RIGHT" layoutX="626.0" layoutY="23.0" prefHeight="26.0" prefWidth="142.0" style="-fx-font-family: calibri; -fx-font-size: 12px; -fx-font-weight: bolder;" />
+      <Label layoutX="90.0" layoutY="226.0" prefHeight="26.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Borrow ID                          :">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBorrowId" layoutX="229.0" layoutY="227.0" style="-fx-background-radius: 10;" />
+      <JFXButton fx:id="btnBorrowSearch" layoutX="410.0" layoutY="227.0" onAction="#btnBorrowSearchOnAction" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #C0C0C0; -fx-font-family: calibri; -fx-font-size: 12px; -fx-font-weight: bolder; -fx-background-radius: 10;" text="Search">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="446.0" layoutY="316.0" prefHeight="26.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Return Date                      :">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtReturnDate" disable="true" layoutX="585.0" layoutY="317.0" style="-fx-background-radius: 10;" />
+      <ImageView fx:id="imgBack" fitHeight="40.0" fitWidth="75.0" layoutX="52.0" layoutY="40.0" onMouseClicked="#btnBackOnMouseClicked" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

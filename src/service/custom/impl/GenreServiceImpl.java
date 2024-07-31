@@ -2,7 +2,6 @@ package service.custom.impl;
 
 import java.util.ArrayList;
 
-import cache.CacheManager;
 import dao.DaoFactory;
 import dao.custom.GenreDao;
 import dto.GenreDto;
